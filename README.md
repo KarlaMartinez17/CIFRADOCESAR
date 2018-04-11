@@ -84,3 +84,7 @@ Por lo que solo hay que cambiar el signo + por el signo - en la formula de cifra
 
 
 ##### FIN
+
+## DIAGRAMA DE FLUJO.
+
+![Diagrama de flujo](assets/img/diagrama-de-flujo.png)
