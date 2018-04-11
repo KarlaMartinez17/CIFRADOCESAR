@@ -43,22 +43,17 @@ function cipher(){
   //creando variable con la fórmula del codigo César.
   var newCharCode = ((asciiCharCode - 65 + totalOfSpaces) % 26) + 65;
     finalMsg = finalMsg + String.fromCharCode(newCharCode);
-  }//cierre de for
+  }//Cierre de for
     return finalMsg;
-}// cierre de función
+}// Cierre de función cipher.
 
 // Creando función decipher.
 function decipher(){
 
-  // creando una variable que guarde el valor ingresado por el usuario
-  var msg = prompt('Por favor ingresa una palabra para encriptar.');
-  //creando primera función para cifrar el valor ingresado por el usuario
-function cipher(){
-  //revisaremos que el valor que de el usuario NO se encuentre vacio.
-      if(msg.length === 0){
-        alert('Por favor ingresa una palabra para encriptar');
-        return;
-    }// cierre de If
+  if(msg.length === 0){
+    alert('Por favor ingresa una palabra para encriptar');
+    return;
+ }// cierre de If
 
 msg = msg.toUpperCase();
 
@@ -96,7 +91,7 @@ msg = msg.toUpperCase();
 
     }
 
-}
+
 
 alert('La palabra que ingresaste convertida a Cifrado de César es: ' + cipher());
 console.log(cipher());
