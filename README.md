@@ -77,7 +77,7 @@ var newCharCode = ((variable con el codigo ASCII - 65 + variable con el total de
 
 10.   return finalMsg;
 
-11. Crear la función descipher.
+11. Crear la función descipher
 Esta función trabaja igual que la función cipher, con la unica diferencia
 que en lugar de sumar el numero de espacios, se tienen que restar, en lugar de sumar.
 Por lo que solo hay que cambiar el signo + por el signo - en la formula de cifrado César.
