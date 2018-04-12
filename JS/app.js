@@ -1,6 +1,16 @@
 // creando una variable que guarde el valor ingresado por el usuario
 var msg = prompt('Por favor ingresa una palabra para encriptar.');
 //creando primera función para cifrar el valor ingresado por el usuario
+var escoge = prompt('1.Cifrar, 2.Decifrar');
+if(escoge == 1){
+  cipher(msg);
+  alert('tu palabra cifrada es: ' + cipher());
+}else if(escoge==2){
+    decipher(msg);
+      alert('tu palabra cifrada es: ' + decipher());
+}
+
+
 function cipher(){
   //revisaremos que el valor que de el usuario NO se encuentre vacio.
   if(msg.length === 0){
@@ -83,7 +93,7 @@ function decipher(){
   //creando variable que almacene los espacios a recorrer.
   var totalOfSpaces = 33;
   //creando variable con la fórmula del codigo César.
-  var newCharCode = ((asciiCharCode - 65 - totalOfSpaces) % 26) + 65;
+  var newCharCode = (asciiCharCode + 65 - 33) % 26 + 65;
       finalMsg = finalMsg + String.fromCharCode(newCharCode);
 
   }
@@ -92,5 +102,6 @@ function decipher(){
 
 
 
-alert('La palabra que ingresaste convertida a Cifrado de César es: ' + cipher());
+
 console.log(cipher());
+console.log(decipher());
